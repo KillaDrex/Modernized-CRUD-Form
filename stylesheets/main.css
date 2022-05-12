@@ -2,12 +2,22 @@
 This is a stylesheet for the main file.
 */
 
-.rootPane {
+.button {
+	-fx-background-color:linear-gradient(to top right, #43C6E4, #5BDAF6);
+	-fx-background-radius:1em;
+}
+
+.button:armed {
+	-fx-background-color:#137186;
+}
+
+
+#rootPane {
 	-fx-background-color:#192448;
 	-fx-background-radius:1em;
 }
 
-.tablePane {
+#tablePane {
 	-fx-background-color:#04103A;
 	-fx-background-radius:1em;
 }
