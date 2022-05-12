@@ -5,7 +5,7 @@ import javafx.scene.image.ImageView;
 
 public class Controller {
 	public ImageView exitMark;
-	
+
 	public void initialize() {
 		exitMark.setOnMouseClicked(e -> handleMouseClick("exitMark"));
 	}

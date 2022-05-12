@@ -10,8 +10,9 @@ import javafx.scene.Scene;
 import javafx.scene.Parent;
 import javafx.scene.paint.Color;
 
-
 public class Main extends Application {
+	private double rootWidth = 879.2000122070312, rootHeight = 573.5999755859375;
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -27,12 +28,16 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 
 		// center stage (window)
-		int stageWidth = 880, stageHeight = 484;	// from fxml
 		Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
-		primaryStage.setX((screenBounds.getWidth() - stageWidth) / 2);
-		primaryStage.setY((screenBounds.getHeight() - stageHeight) / 2);
+		primaryStage.setX((screenBounds.getWidth() - rootWidth) / 2);
+		primaryStage.setY((screenBounds.getHeight() - rootHeight) / 2);
+		
+		// allow resizing for undecorated stage
+		ResizeHelper.addResizeListener(primaryStage, rootWidth, rootHeight);
 		
 		// show stage
-		primaryStage.show();
+		primaryStage.show();		
 	}
+	
+	
 }
