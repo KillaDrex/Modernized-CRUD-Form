@@ -1,0 +1,2 @@
+javac -p "%JAVA_FX%" --add-modules javafx.controls,javafx.fxml -d classes src\main\Main.java src\controllers\Controller.java
+java -p "%JAVA_FX%" --add-modules javafx.controls,javafx.fxml -cp "stylesheets;fxml;classes" main.Main

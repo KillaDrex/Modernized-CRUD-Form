@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <top>
+      <Label text="Inventory Registration Form" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="39.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="125.0">
+               <children>
+                  <Label alignment="CENTER" text="Branch ID" HBox.hgrow="SOMETIMES">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="31.0" prefWidth="217.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" spacing="120.0">
+               <children>
+                  <Label alignment="CENTER" text="Item Code" HBox.hgrow="SOMETIMES">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefWidth="217.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="41.0" spacing="105.0">
+               <children>
+                  <Label alignment="CENTER" text="Batch Code" HBox.hgrow="SOMETIMES">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefWidth="217.0" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="72.0" spacing="175.0">
+               <children>
+                  <Label alignment="CENTER" text="Price" HBox.hgrow="SOMETIMES">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefHeight="31.0" prefWidth="217.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox spacing="38.0">
+               <children>
+                  <Label text="Manufacture Date">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="174.0" spacing="46.0">
+               <children>
+                  <Label text="Preparation Date">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="205.0" spacing="63.0">
+               <children>
+                  <Label text="Expiration Date">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                  </Label>
+                  <DatePicker />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Button fx:id="addButton" mnemonicParsing="false" prefHeight="74.0" prefWidth="74.0" text="Add" />
+                  <Button fx:id="updateButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="74.0" text="Update" />
+                  <Button fx:id="deleteButton" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="74.0" text="Delete" />
+                  <Button fx:id="clearButton" layoutX="75.0" layoutY="10.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="74.0" text="Clear" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" top="15.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="25.0" top="15.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Label text="Search">
+                     <font>
+                        <Font name="Times New Roman" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+            </HBox>
+            <TreeView prefHeight="318.0" prefWidth="494.0">
+               <VBox.margin>
+                  <Insets top="12.0" />
+               </VBox.margin>
+            </TreeView>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
