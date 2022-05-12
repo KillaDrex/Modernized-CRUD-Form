@@ -2,7 +2,12 @@
 This is a stylesheet for the main file.
 */
 
-.button {
-	-fx-text-alignment: right;
+.rootPane {
+	-fx-background-color:#192448;
+	-fx-background-radius:1em;
 }
 
+.tablePane {
+	-fx-background-color:#04103A;
+	-fx-background-radius:1em;
+}
