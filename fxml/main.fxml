@@ -12,8 +12,12 @@
 
 <Pane id="rootPane" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
-      <Pane id="tablePane" layoutX="377.0" layoutY="40.0" prefHeight="494.0" prefWidth="473.0" stylesheets="@../stylesheets/main.css" />
-      <ImageView fx:id="exitMark" fitHeight="16.0" fitWidth="21.0" layoutX="855.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+      <ScrollPane layoutX="385.0" layoutY="82.0" prefHeight="455.0" prefWidth="658.0" stylesheets="@../stylesheets/main.css">
+         <content>
+            <VBox id="tablePane" fx:id="table" prefHeight="455.0" prefWidth="658.0" />
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="exitMark" fitHeight="16.0" fitWidth="21.0" layoutX="1047.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/cross.png" />
          </image>
@@ -76,6 +80,17 @@
          </image>
       </ImageView>
       <ImageView disable="true" fitHeight="114.0" fitWidth="200.0" layoutX="299.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView disable="true" fitHeight="114.0" fitWidth="116.0" layoutX="763.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView disable="true" fitHeight="114.0" fitWidth="43.0" layoutX="1033.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField id="searchField" layoutX="536.0" layoutY="40.0" promptText="Search">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <ComboBox layoutX="742.0" layoutY="40.0" prefWidth="150.0" />
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="661.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../sourced/src/images/icons8_Search_52px.png" />
+         </image>
+      </ImageView>
    </children>
 </Pane>

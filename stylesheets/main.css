@@ -11,6 +11,54 @@ This is a stylesheet for the main file.
 	-fx-background-color:#137186;
 }
 
+.hBox {
+	-fx-background-color:#04103A;
+	-fx-background-radius:5;
+	-fx-background-insets:0;
+	-fx-background-radius:1em;
+}
+
+.scroll-pane {
+    -fx-background-color: #04103A;
+	-fx-background-radius:1em;
+}
+
+.scroll-pane .viewport {
+	-fx-background-color: transparent;
+	-fx-background-radius:1em;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to top right, #43C6E4, #5BDAF6);
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.combo-box {
+	-fx-background-color:#192448;
+	-fx-border-color:#B7C3D7;
+	-fx-border-radius:2em;	
+}
 
 #rootPane {
 	-fx-background-color:#192448;
@@ -20,4 +68,10 @@ This is a stylesheet for the main file.
 #tablePane {
 	-fx-background-color:#04103A;
 	-fx-background-radius:1em;
+}
+
+#searchField {
+	-fx-background-color:#192448;
+	-fx-border-color:#B7C3D7;
+	-fx-border-radius:2em;
 }
