@@ -11,7 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.paint.Color;
 
 public class Main extends Application {
-	private double rootWidth = 879.2000122070312, rootHeight = 573.5999755859375;
+	private double x, y;
 	
 	public static void main(String[] args) {
 		launch(args);
@@ -28,12 +28,22 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 
 		// center stage (window)
+		double rootWidth = 1177, rootHeight = 574; // from scenebuilder
 		Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
 		primaryStage.setX((screenBounds.getWidth() - rootWidth) / 2);
 		primaryStage.setY((screenBounds.getHeight() - rootHeight) / 2);
 		
-		// allow resizing for undecorated stage
-		ResizeHelper.addResizeListener(primaryStage, rootWidth, rootHeight);
+		// make stage draggable
+        root.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+
+        });
 		
 		// show stage
 		primaryStage.show();		

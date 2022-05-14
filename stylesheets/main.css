@@ -60,6 +60,10 @@ This is a stylesheet for the main file.
 	-fx-border-radius:2em;	
 }
 
+.list-cell {
+	-fx-text-fill:#B7C3D7;
+}
+
 #rootPane {
 	-fx-background-color:#192448;
 	-fx-background-radius:1em;
