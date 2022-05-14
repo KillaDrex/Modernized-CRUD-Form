@@ -87,7 +87,7 @@
       <ComboBox layoutX="871.0" layoutY="69.0" prefHeight="26.0" prefWidth="160.0" promptText="Pick a column.." />
       <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="829.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../sourced/src/images/icons8_Search_52px.png" />
+            <Image url="@../assets/icons8_Search_52px.png" />
          </image>
       </ImageView>
       <HBox layoutX="409.0" layoutY="119.0" prefHeight="33.0" prefWidth="917.0" spacing="35.0">
