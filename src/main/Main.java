@@ -48,6 +48,4 @@ public class Main extends Application {
 		// show stage
 		primaryStage.show();
 	}
-	
-	
 }
