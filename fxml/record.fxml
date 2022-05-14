@@ -15,15 +15,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" spacing="80.0" styleClass="hBox" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<HBox fx:id="itemC" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="900.0" spacing="80.0" styleClass="hBox" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-      <Label text="01" textFill="#b7c3d7">
+      <Label text="01" textAlignment="CENTER" textFill="#b7c3d7">
          <HBox.margin>
             <Insets left="5.0" />
          </HBox.margin>
       </Label>
       <Label text="10" textFill="#b7c3d7" />
       <Label text="SISIG" textFill="#b7c3d7" />
+      <Label layoutX="209.0" layoutY="26.0" text="001" textFill="#b7c3d7" />
       <Label text="17.53" textFill="#b7c3d7" />
         <Label text="05/04/22" textFill="#b7c3d7" />
         <Label text="05/04/22" textFill="#b7c3d7">

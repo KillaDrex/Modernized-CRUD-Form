@@ -28,7 +28,7 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 
 		// center stage (window)
-		double rootWidth = 1177, rootHeight = 574; // from scenebuilder
+		double rootWidth = 1338, rootHeight = 574; // from scenebuilder
 		Rectangle2D screenBounds = Screen.getPrimary().getVisualBounds();
 		primaryStage.setX((screenBounds.getWidth() - rootWidth) / 2);
 		primaryStage.setY((screenBounds.getHeight() - rootHeight) / 2);
@@ -46,7 +46,7 @@ public class Main extends Application {
         });
 		
 		// show stage
-		primaryStage.show();		
+		primaryStage.show();
 	}
 	
 	

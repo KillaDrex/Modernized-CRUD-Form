@@ -10,14 +10,14 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.control.Button?>
 
-<Pane id="rootPane" prefHeight="574.0" prefWidth="1177.0" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+<Pane id="rootPane" prefHeight="574.0" prefWidth="1338.0" stylesheets="@../stylesheets/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
    <children>
-      <ScrollPane layoutX="389.0" layoutY="125.0" prefHeight="400.0" prefWidth="742.0" stylesheets="@../stylesheets/main.css">
+      <ScrollPane layoutX="389.0" layoutY="139.0" prefHeight="400.0" prefWidth="917.0" stylesheets="@../stylesheets/main.css">
          <content>
-            <VBox id="tablePane" fx:id="table" prefHeight="400.0" prefWidth="734.0" />
+            <VBox id="tablePane" fx:id="table" prefHeight="400.0" prefWidth="900.0" />
          </content>
       </ScrollPane>
-      <ImageView fx:id="exitMark" fitHeight="16.0" fitWidth="21.0" layoutX="1147.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="exitMark" fitHeight="16.0" fitWidth="21.0" layoutX="1311.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/cross.png" />
          </image>
@@ -79,18 +79,18 @@
             <Image url="@../assets/deleteButton.png" />
          </image>
       </ImageView>
-      <TextField id="searchField" layoutX="536.0" layoutY="40.0" promptText="Search">
+      <TextField id="searchField" layoutX="665.0" layoutY="69.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="188.0" promptText="Search">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </TextField>
-      <ComboBox layoutX="742.0" layoutY="40.0" promptText="Pick a column.." />
-      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="661.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+      <ComboBox layoutX="871.0" layoutY="69.0" prefHeight="26.0" prefWidth="160.0" promptText="Pick a column.." />
+      <ImageView fitHeight="17.0" fitWidth="16.0" layoutX="829.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../sourced/src/images/icons8_Search_52px.png" />
          </image>
       </ImageView>
-      <HBox layoutX="409.0" layoutY="90.0" prefHeight="33.0" prefWidth="720.0" spacing="5.0">
+      <HBox layoutX="409.0" layoutY="119.0" prefHeight="33.0" prefWidth="917.0" spacing="35.0">
          <children>
             <Label text="Package No." textFill="WHITE" />
             <Label text="Branch ID" textFill="WHITE" />

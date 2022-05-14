@@ -9,10 +9,9 @@ import javafx.scene.layout.VBox;
 public class Controller {
 	public ImageView exitMark;
 	public VBox table;
-
+	
 	public void initialize() {
 		exitMark.setOnMouseClicked(e -> handleMouseClick("exitMark"));
-		
 		// add some records to table
         Node[] nodes = new Node[10];
         for (int i = 0; i < nodes.length; i++) {
@@ -32,7 +31,7 @@ public class Controller {
             } catch (java.io.IOException e) {
                 e.printStackTrace();
             }
-        }		
+        }
 	}
 	
 	public void handleMouseClick(String node) {
